@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Cadastro de vagas </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class="swiper-no-swiping"  [fullscreen]="true"> 
+ 
+  <ion-list class="ion-margin ion-text-center">
+    <ion-list-header><ion-label color="light">VagasTi</ion-label></ion-list-header>
+
+    
+    
+        <ion-item color="dark">
+          <ion-input type="text" [(ngModel)]="product.name" placeholder="Nome da vaga"></ion-input>
+        </ion-item>
+        <ion-item color="dark">
+          <ion-input type="text" [(ngModel)]="product.description" placeholder="Descrição da vaga"></ion-input>
+        </ion-item>
+ 
+<ion-footer >
+  <ion-toolbar color="dark">
+    <ion-button (click)="saveProduct()" expand="block">
+      Cadastrar Vaga
+    </ion-button>
+    
+  </ion-toolbar>
+</ion-footer>
+  </ion-list>
+</ion-content>  

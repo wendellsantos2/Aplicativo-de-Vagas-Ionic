@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+	sharedrepository = 2
+[submodule]
+	active = .
+[remote "origin"]
+	url = https://github.com/wendellsantos2/Aplicativo-de-Vagas-Ionic.git
+[receive]
+	denyNonFastforwards = true

@@ -1,0 +1,63 @@
+ 
+<ion-content class="swiper-no-swiping"  [fullscreen]="true"> 
+ 
+  <ion-list class="ion-margin ion-text-center">
+    <ion-list-header><ion-label color="light">VagasTi</ion-label></ion-list-header>
+    <ion-card> 
+      <ion-item (click)="cadastrarVagas()" class="ion-activated" color="warning" >
+        <div class="ion-text-center">
+          
+          <ion-card-title  ><ion-icon name="add-circle"></ion-icon>  Adicionar vaga</ion-card-title>
+           
+        </div>
+      </ion-item>
+    </ion-card>
+
+
+    <ion-card>
+      <ion-item (click)="verVagas()" class="ion-activated" color="warning" >
+        <div class="ion-text-center">
+          
+          <ion-card-title > <ion-icon name="reader"></ion-icon>   Ver vagas</ion-card-title>
+           
+        </div>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item (click)="CandidatosVagas()" class="ion-activated" color="warning" >
+        <div class="ion-text-center">
+          
+          <ion-card-title > <ion-icon name="reader"></ion-icon>Candidatos das vagas</ion-card-title>
+           
+        </div>
+      </ion-item>
+    </ion-card>
+
+    
+     
+      
+    <ion-card >
+      <ion-item (click) ="gotoProfile()" class="ion-activated" color="warning"  >
+      <div class="ion-text-center">
+        
+        <ion-card-title><ion-icon name="person"></ion-icon> Meu perfil</ion-card-title>
+         
+      </div>
+    </ion-item>
+  </ion-card>
+
+ 
+
+
+    <ion-card>
+      <ion-item  (click)="logout()" class="ion-activated" color="danger"  >
+        <div class="ion-text-center">
+          
+          <ion-card-title><ion-icon name="walk-sharp"></ion-icon>Sair</ion-card-title>
+           
+        </div>
+      </ion-item>
+    </ion-card>
+ 
+  </ion-list>
+</ion-content>  

@@ -1,0 +1,53 @@
+ 
+ <ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title >Vagas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="swiper-no-swiping"  [fullscreen]="true"> 
+ 
+  <ion-list class="ion-margin ion-text-center">
+    <ion-list-header><ion-label color="light">VagasTi</ion-label></ion-list-header>
+    <ion-item-sliding *ngFor="let product of products">
+      <ion-item   color="dark"  [routerLink]="['/details', product.id]">
+      
+       
+        <ion-card color="primary" >
+          <ion-card-header>
+            <ion-card-title> {{ product.name }}</ion-card-title>
+            <ion-card-subtitle><ion-label> <p>{{ product.description }}</p>
+              <p>{{ product.createdAt | date: 'short' }}</p> </ion-label></ion-card-subtitle>
+          </ion-card-header>
+        
+         
+      
+        </ion-card>
+ 
+      </ion-item>
+
+          
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="deleteProduct(product.id)">
+          <ion-icon slot="top" name="trash"></ion-icon>
+          Excluir
+        </ion-item-option>
+      </ion-item-options>
+ 
+    </ion-item-sliding>
+  
+ 
+  </ion-list>
+</ion-content>  
+ 
+
+ 
+    
+  
+ 
+
+ 

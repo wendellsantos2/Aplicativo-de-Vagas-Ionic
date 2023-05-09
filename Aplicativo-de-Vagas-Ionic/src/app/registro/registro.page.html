@@ -1,0 +1,38 @@
+ 
+
+  <ion-content [fullscreen]="true">
+    <div id="bg">
+      <ion-fab vertical="bottom" edge horizontal="center" slot="fixed">
+        <ion-fab-button color="white" routerLink="/logo">
+          <ion-icon name="close-outline" color="medium"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+    <ion-list lines="none" class="ion-margin">
+      <ion-list-header>Cadastro rápido e facil!</ion-list-header>
+      <ion-item class="ion-margin-top" lines="none">
+        <ion-input type="text" placeholder="Nome"  [(ngModel)]="name"></ion-input>
+      </ion-item>
+
+      <ion-item class="ion-margin-top" lines="none">
+        <ion-input type="email" placeholder="E-mail" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      
+      <ion-item class="ion-margin-top" lines="none">
+        <ion-input type="text" placeholder="Celular" [(ngModel)]="phone"></ion-input>
+      </ion-item>
+
+      <ion-item class="ion-margin-top" lines="none">
+        <ion-input type="password" placeholder="Senha" [(ngModel)]="password"></ion-input>
+      </ion-item>
+
+    
+
+      <ion-button class="ion-margin-top" (click)="register()" color="light" expand="block" >
+        Cadastrar
+        <ion-icon name="log-in" slot="end"></ion-icon>
+
+      </ion-button>
+ 
+    </ion-list>
+  </ion-content>
